@@ -1,0 +1,467 @@
+/*HELPER*/
+.btn-btn {
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #16a085;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 24px 45px 18px 45px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #16a085;
+    letter-spacing: 2.7px;
+    margin: 0;
+    font-weight: 700;
+}
+
+span {
+    font-weight: 700;
+}
+
+.section-p {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    margin-top: 30px;
+}
+
+
+.button-hover {
+    background-color: #208873;
+}
+
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    padding: 100px 15px 15px 15px;
+}
+
+// SECTION HEADER
+header {
+    margin-top: 2px;
+    background-image: url('../images/originals/livello-1.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+
+    .container {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+    }
+}
+
+// SECTION NAV
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    ul {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 50px;
+            cursor: pointer;
+            font-size: 13px;
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
+
+        img {
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}
+
+// SECTION HOME
+.home {
+    display: block;
+    text-align: center;
+
+    h1 {
+        font-size: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 5.4px;
+    }
+
+    h3 {
+        font-size: 15px;
+        letter-spacing: 2.4px;
+    }
+
+    .btn-get {
+        @extend .btn-btn;
+
+        &:hover {
+            background-color: #7be6d0;
+        }
+    }
+}
+
+.home-social {
+    text-align: center;
+
+    i {
+        color: white;
+        justify-content: flex-end;
+        font-size: 25px;
+        margin: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// SECTION MAIN
+main {
+    position: relative;
+    background-color: #f5f6f7;
+
+    .container {
+        padding-bottom: 0;
+        padding-top: 50px;
+
+        .row {
+            .col-md-6 {
+                h1 {
+                    @extend .section-title;
+                }
+
+                p {
+                    margin-top: 30px;
+                    font-size: 12px;
+                    letter-spacing: 1.8px;
+                }
+
+                .btn-get {
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    @extend .btn-btn;
+
+                    &:hover {
+                        @extend .button-hover;
+                    }
+                }
+            }
+
+            .col-img-1 {
+                margin-top: 10px;
+                background-image: url("images/originals/iphone.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                // clip-path: inset(0 0 15% 0);
+            }
+        }
+    }
+
+}
+
+// SECTION LEARN MORE
+.learn-more {
+    .col-md-6 {
+        #carouselExampleControls {
+            width: 100%;
+
+            .carousel-inner {
+                overflow: hidden;
+
+                .carousel-item {
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: inline;
+        position: relative;
+
+        i {
+            color: black;
+            font-size: 16px;
+        }
+    }
+
+    .col-md-6 {
+        h1 {
+            @extend .section-title;
+        }
+
+        p {
+            @extend .section-p;
+        }
+
+        button {
+            @extend .btn-btn;
+
+            &:hover {
+                @extend .button-hover;
+            }
+        }
+
+        .design-nav {
+            margin-top: 50px;
+        }
+
+        a i {
+            color: black;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .fa-angle-left {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    }
+}
+
+// SECTION COMMUNITY
+.community {
+    .carousel {
+
+        a i {
+            color: black;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-right: 62px;
+        }
+
+        .fa-angle-left {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    }
+}
+
+// SECTION GALLERY
+.gallery {
+    display: flex;
+    justify-content: space-around;
+
+    .gallery-item-1 {
+        flex: 1;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+
+        h1 {
+            @extend .section-title;
+            font-size: 16px;
+            color: black;
+            margin-top: 20px;
+        }
+
+        p {
+            @extend .section-p;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    .gallery-item-2 {
+        background-image: url('../images/originals/livello-5.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 2;
+    }
+
+    .gallery-item-3 {
+        background-image: url('../images/originals/livello-6.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 2;
+    }
+}
+
+// SECTION SUBSCRIBE
+.subscribe {
+    height: 790px;
+    background-image: url('../images/originals/livello-3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub {
+        margin: auto;
+
+        h1 {
+            letter-spacing: 2.4px;
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .input-group {
+            .input-group-append {
+                background-color: #16a085;
+                cursor: pointer;
+
+                &:hover {
+                    @extend .button-hover;
+                }
+
+                .btn-outline-secondary {
+                    border: none;
+                    color: white;
+                    height: 100%;
+                    width: 100%;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+// SECTION DOWNLOAD
+.download {
+    text-align: center;
+    background-color: #f5f6f7;
+
+    h3 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .btn-group {
+        .btn-secondary {
+            background-color: #1abc9c;
+            letter-spacing: 2.7px;
+            border: none;
+            height: 56px;
+            font-size: 16px;
+        }
+
+        .btn-title {
+            height: 56px;
+
+            &:hover {
+                @extend .button-hover;
+            }
+        }
+
+        .btn-icon {
+            height: 56px;
+            width: 56px;
+            background-color: #208873;
+
+            i {
+                font-size: 29px;
+            }
+        }
+    }
+
+}
+
+// SECTION FOOTER
+footer {
+    position: relative;
+
+    .footer-items {
+        text-transform: uppercase;
+        display: inline;
+
+        a {
+            margin: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            letter-spacing: 2.1px;
+
+            &:hover {
+                color: #16a085;
+            }
+        }
+
+        span {
+            color: #16a085;
+        }
+    }
+
+    p {
+        margin: 10px;
+        font-size: 14px;
+        letter-spacing: 2.1px;
+        font-weight: bolder;
+    }
+
+    .footer-icon {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        right: 15%;
+    }
+
+    p a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+}
+/*MEDIA QUERIES*/
+/* Small devices, phones less than 767px) */
+@media (max-width: 767px) {
+    .community, .gallery {
+        display: block;
+        justify-content: center;
+    }
+    .gallery-item-2, .gallery-item-3 {
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+        height: 200px;
+    }
+}
+
+/*Device, tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {}
