@@ -1,4 +1,4 @@
-# Project-5  Changing PSD to HTML
+# Portfolio-2  Changing PSD to HTML
 
 I used bootstrap and flexbox to create this site.
 
